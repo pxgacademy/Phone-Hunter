@@ -7,6 +7,7 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
+phone-hunter.fig
 node_modules
 phone-hunter-demo
 dist
@@ -22,5 +23,4 @@ dist-ssr
 *.ntvs*
 *.njsproj
 *.sln
-*.fig
 *.sw?
