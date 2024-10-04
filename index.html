@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>PXGA</title>
+    <title>Phone Hunter</title>
     <!-- CSS raw file -->
     <link rel="stylesheet" href="./styles/styles.css" />
     <!-- Google font cdn -->
@@ -30,9 +30,93 @@
   <!-- body started here -->
   <body class="font-manrope">
     <!-- header section started -->
-    <header></header>
-    <main></main>
-    <footer></footer>
+    <header>
+      <nav class="flex items-center w-10/12 mx-auto mt-2">
+        <h3 class="flex-1 text-xl font-bold cursor-default">Hot Gadgets</h3>
+        <button class="btn px-10 bg-blue-500 text-white hover:bg-blue-600">
+          Sign Up
+        </button>
+      </nav>
+
+      <!-- banner section -->
+      <section class="mt-10 lg:mt-20">
+        <div class="w-10/12 md:w-8/12 lg:w-1/2 mx-auto text-center space-y-3">
+          <h1 class="text-3xl lg:text-5xl font-extrabold">
+            Apple Iphone 13 Pro Max
+          </h1>
+          <p>
+            There are many variations of passages of Lorem Ipsum available, but
+            the majority have suffered alteration in some form, by injected
+            humou.
+          </p>
+          <button class="btn px-10 bg-blue-500 text-white hover:bg-blue-600">
+            Buy Now
+          </button>
+        </div>
+        <div class="w-8/12 mx-auto mt-4 lg:mt-6">
+          <img class="mx-auto" src="./images/phone.png" alt="" />
+        </div>
+      </section>
+    </header>
+    <main>
+      <section class="w-10/12 mx-auto">
+        <h3 class="text-center text-3xl font-bold">Search your phone</h3>
+
+        <!-- Search input -->
+        <div
+          class="w-full max-w-[500px] mx-auto bg-zinc-200 mt-4 rounded-lg p-2 flex gap-2"
+        >
+          <input
+            type="text"
+            class="flex-1 rounded-lg px-3 outline-none text-zinc-700 font-bold"
+            id=""
+            placeholder="📢 Search your phone"
+          />
+          <button
+            class="btn border-none hover:border-none px-10 bg-blue-500 text-white hover:bg-blue-600"
+          >
+            Search
+          </button>
+        </div>
+
+        <!-- Cards -->
+        <div
+        id="allItems"
+          class="w-full mt-10 lg:mt-16 grid grid-cols-1 lg:grid-cols-3 gap-5"
+        >
+          <!-- <div class="border-2 p-5 rounded-lg shadow-lg">
+            <div
+              class="flex items-center justify-center p-5 bg-sky-100 rounded-md"
+            >
+              <img class="w-[215px]" src="./images/phone.png" alt="" />
+            </div>
+            <div class="mt-5 space-y-3 text-center">
+              <h4 class="text-2xl font-bold">iPhone 13 Pro Max</h4>
+              <p>
+                There are many variations of passages of available, but the
+                majority have suffered
+              </p>
+              <p class="text-xl font-bold">$999</p>
+              <button
+                class="btn border-none hover:border-none px-10 bg-blue-500 text-white hover:bg-blue-600"
+              >
+                Show Details
+              </button>
+            </div>
+          </div> -->
+        </div>
+
+        <div class="mt-10 w-full text-center">
+          <button
+          id="showAll"
+            class="btn border-none hover:border-none px-10 bg-blue-500 text-white hover:bg-blue-600"
+          >
+            Show All
+          </button>
+        </div>
+      </section>
+    </main>
+    <footer class="mt-10 lg:mt-24"></footer>
     <!-- JavaScript -->
     <script src="./js/tailwindCdn.js"></script>
     <script src="./js/utilities.js"></script>
