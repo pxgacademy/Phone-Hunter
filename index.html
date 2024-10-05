@@ -14,10 +14,10 @@
       rel="stylesheet"
     />
     <!-- Fontawesome cdn -->
-    <!-- <script
+    <script
       src="https://kit.fontawesome.com/ce74b8a1bb.js"
       crossorigin="anonymous"
-    ></script> -->
+    ></script>
     <!-- Tailwindcss cdn -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- daisyUI cdn -->
@@ -28,7 +28,7 @@
     />
   </head>
   <!-- body started here -->
-  <body class="font-manrope">
+  <body class="font-manrope max-w-[1440px] mx-auto">
     <!-- header section started -->
     <header>
       <nav class="flex items-center w-10/12 mx-auto mt-2">
@@ -69,10 +69,11 @@
           <input
             type="text"
             class="flex-1 rounded-lg px-3 outline-none text-zinc-700 font-bold"
-            id=""
+            id="searchInput"
             placeholder="📢 Search your phone"
           />
           <button
+            id="searchBtn"
             class="btn border-none hover:border-none px-10 bg-blue-500 text-white hover:bg-blue-600"
           >
             Search
@@ -81,7 +82,7 @@
 
         <!-- Cards -->
         <div
-        id="allItems"
+          id="allItems"
           class="w-full mt-10 lg:mt-16 grid grid-cols-1 lg:grid-cols-3 gap-5"
         >
           <!-- <div class="border-2 p-5 rounded-lg shadow-lg">
@@ -108,15 +109,133 @@
 
         <div class="mt-10 w-full text-center">
           <button
-          id="showAll"
+            id="showAll"
             class="btn border-none hover:border-none px-10 bg-blue-500 text-white hover:bg-blue-600"
           >
             Show All
           </button>
         </div>
       </section>
+
+      <section>
+        <!-- Open the modal using ID.showModal() method -->
+        <dialog
+          id="my_modal_5"
+          class="modal modal-bottom sm:modal-middle max-w-[450px] mx-auto"
+        >
+          <div class="modal-box">
+            <div
+              class="w-full p-4 bg-sky-100 flex justify-center items-center rounded-lg overflow-hidden"
+            >
+              <img id="modalImg" class="w-[215px]" src="alt" ="" />
+            </div>
+            <h3 id="modalTitle" class="text-lg font-bold mt-4"></h3>
+            <p class="py-2 text-sm">
+              It is a long established fact that a reader will be distracted by
+              the readable content of a page when looking at its layout.
+            </p>
+            <p class="text-sm">
+              <span class="font-bold">Storage :</span>
+              <span id="Storage"></span>
+            </p>
+            <p class="text-sm">
+              <span class="font-bold">Display Size :</span>
+              <span id="Display"></span>
+            </p>
+            <p class="text-sm">
+              <span class="font-bold">Chipset :</span>
+              <span id="Chipset"></span>
+            </p>
+            <p class="text-sm">
+              <span class="font-bold">Memory :</span> <span id="Memory"></span>
+            </p>
+            <p class="text-sm">
+              <span class="font-bold">Slug :</span> <span id="Slug"></span>
+            </p>
+            <p class="text-sm">
+              <span class="font-bold">Release data :</span>
+              <span id="ReleaseDate"></span>
+            </p>
+            <p class="text-sm">
+              <span class="font-bold">Brand :</span> <span id="Brand"></span>
+            </p>
+            <p class="text-sm">
+              <span class="font-bold">GPS :</span> <span id="GPS"></span>
+            </p>
+            <div class="modal-action">
+              <form method="dialog" class="w-full flex justify-center">
+                <!-- if there is a button in form, it will close the modal -->
+                <button
+                  class="btn px-10 bg-[#DC3545] hover:bg-[#c42636] text-white"
+                >
+                  Close
+                </button>
+              </form>
+            </div>
+          </div>
+        </dialog>
+      </section>
     </main>
-    <footer class="mt-10 lg:mt-24"></footer>
+    <footer class="mt-10 lg:mt-24 bg-sky-100 py-10 lg:py-20">
+      <div class="w-10/12 mx-auto">
+        <!-- top section -->
+        <div
+          class="flex items-center justify-between flex-col gap-4 md:flex-row"
+        >
+          <div>
+            <h2 class="text-3xl font-extrabold">Hot Gadgets</h2>
+            <p class="text-base text-zinc-500 pt-2">You can definitely work.</p>
+          </div>
+          <div class="flex items-center gap-3 flex-col-reverse lg:flex-row">
+            <div class="space-x-3 text-3xl">
+              <i class="fa-brands fa-facebook"></i>
+              <i class="fa-brands fa-twitter"></i>
+              <i class="fa-brands fa-instagram"></i>
+            </div>
+            <button
+              id=""
+              class="btn border-none hover:border-none px-10 bg-blue-500 text-white hover:bg-blue-600"
+            >
+              Join Premium
+            </button>
+          </div>
+        </div>
+
+        <!-- bottom section -->
+        <div
+          class="mt-10 lg:mt-20 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 text-center md:text-left"
+        >
+          <ul>
+            <li><a href="">Product</a></li>
+            <li><a href="">Browse jobs</a></li>
+            <li><a href="">Remote jobs</a></li>
+            <li><a href="">Startup jobs</a></li>
+            <li><a href="">Company jobs</a></li>
+          </ul>
+          <ul>
+            <li><a href="">Popular</a></li>
+            <li><a href="">UIUX Design</a></li>
+            <li><a href="">Product Design</a></li>
+            <li><a href="">Back-End Developer</a></li>
+            <li><a href="">Front-End Developer</a></li>
+          </ul>
+          <ul>
+            <li><a href="">Resource</a></li>
+            <li><a href="">Faq</a></li>
+            <li><a href="">Support</a></li>
+            <li><a href="">Privacy Policy </a></li>
+            <li><a href="">Terms of Service</a></li>
+          </ul>
+          <ul>
+            <li><a href="">Company</a></li>
+            <li><a href="">About Us</a></li>
+            <li><a href="">Contact Us</a></li>
+            <li><a href="">Career Tips</a></li>
+            <li><a href="">Careers</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
     <!-- JavaScript -->
     <script src="./js/tailwindCdn.js"></script>
     <script src="./js/utilities.js"></script>
