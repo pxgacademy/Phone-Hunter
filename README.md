@@ -1,6 +1,4 @@
-# Live Link
-
-# [Live Link](https://phone-watch-hunter.netlify.app/)
+# Live Link: [Click Me](https://phone-watch-hunter.netlify.app/)
 
 ---
 
